@@ -1,0 +1,50 @@
+{
+    "name": "hstyle",
+    "version": "0.1.0",
+    "description": "A component styling lib.",
+    "main": "hstyle.umd.min.js",
+    "module": "hstyle.min.js",
+    "types": "index.d.ts",
+    "scripts": {
+        "prebuild": "rd /q /s dist typings raw || exit 0",
+        "build": "tsc && rollup -c",
+        "postbuild": "terser dist/hstyle.js -c -m --module -o dist/hstyle.min.js && terser dist/hstyle.umd.js -c -m --toplevel -o dist/hstyle.umd.min.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/huang2002/hstyle.git"
+    },
+    "keywords": [
+        "hstyle",
+        "style",
+        "stylesheet",
+        "class",
+        "css",
+        "css-in-js",
+        "component",
+        "scoped",
+        "collision-free",
+        "3h"
+    ],
+    "author": "3h",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/huang2002/hstyle/issues"
+    },
+    "homepage": "https://github.com/huang2002/hstyle#readme",
+    "files": [
+        "dist",
+        "typings",
+        "index.d.ts",
+        "README.md",
+        "LICENSE"
+    ],
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-preset-env": "^1.7.0",
+        "rollup": "^0.63.5",
+        "rollup-plugin-babel": "^3.0.7",
+        "terser": "^3.8.1",
+        "typescript": "^3.0.1"
+    }
+}
