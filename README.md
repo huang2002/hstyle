@@ -22,8 +22,9 @@ const className = style`
     }
     /* Write anything as if you are writing CSS: */
     @media all and (max-width: 600px) {
-        ul&>li {
-            background: #ccc;
+        ul&>li::before {
+            /* && will be converted to & */
+            content: "&&";
         }
     }
     /* The real class name will be returned. */
@@ -42,8 +43,8 @@ const anotherClassName = styleObj({
         color: 'blue'
     },
     '@media all and (max-width: 600px)': {
-        'ul&>li': {
-            background: '#ccc'
+        'ul&>li::before': {
+            content: '&&'
         }
     }
 });

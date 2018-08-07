@@ -1,3 +1,7 @@
+### 0.1.3 - 2018-08-07
+
+- Update README.md
+
 ### 0.1.2 - 2018-08-07
 
 - Improve the type declaration
