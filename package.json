@@ -1,6 +1,6 @@
 {
     "name": "hstyle",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "A component styling lib.",
     "main": "hstyle.umd.min.js",
     "module": "hstyle.min.js",

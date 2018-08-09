@@ -44,7 +44,7 @@ const anotherClassName = styleObj({
     },
     '@media all and (max-width: 600px)': {
         'ul&>li::before': {
-            content: '&&'
+            content: '"&&"'
         }
     }
 });

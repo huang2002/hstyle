@@ -1,3 +1,7 @@
+### 0.1.4 - 2018-08-09
+
+- Fix a typo in README.md
+
 ### 0.1.3 - 2018-08-07
 
 - Update README.md
