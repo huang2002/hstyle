@@ -1,3 +1,7 @@
+### 0.1.5 - 2018-08-10
+
+- Fix terser options
+
 ### 0.1.4 - 2018-08-09
 
 - Fix a typo in README.md

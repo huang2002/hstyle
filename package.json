@@ -1,6 +1,6 @@
 {
     "name": "hstyle",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "A component styling lib.",
     "main": "hstyle.umd.min.js",
     "module": "hstyle.min.js",
@@ -8,7 +8,7 @@
     "scripts": {
         "prebuild": "rd /q /s dist typings raw || exit 0",
         "build": "tsc && rollup -c",
-        "postbuild": "terser dist/hstyle.js -c -m --module -o dist/hstyle.min.js && terser dist/hstyle.umd.js -c -m --toplevel -o dist/hstyle.umd.min.js"
+        "postbuild": "terser dist/hstyle.js --config-file terser.json --module -o dist/hstyle.min.js && terser dist/hstyle.umd.js --config-file terser.json -o dist/hstyle.umd.min.js"
     },
     "repository": {
         "type": "git",
