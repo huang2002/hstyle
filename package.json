@@ -1,9 +1,9 @@
 {
     "name": "hstyle",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "A component styling lib.",
-    "main": "hstyle.umd.min.js",
-    "module": "hstyle.min.js",
+    "main": "dist/hstyle.umd.min.js",
+    "module": "dist/hstyle.min.js",
     "types": "index.d.ts",
     "scripts": {
         "prebuild": "rd /q /s dist typings raw || exit 0",
